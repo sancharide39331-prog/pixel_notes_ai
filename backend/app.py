@@ -12,6 +12,11 @@ def home():
         "status": "online",
         "service": "Pixel Notes AI"
     }
+@app.route("/check-key")
+def check_key():
+    if os.getenv("GROQ_API_KEY"):
+        return {"status": "found"}
+    return {"status": "missing"}
 # Put your Groq API Key here
 import os
 
