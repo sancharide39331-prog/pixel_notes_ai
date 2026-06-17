@@ -1,4 +1,4 @@
-import Flashcard from "./components/Flashcard";
+import Flashcard from "./components/flashcard";
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 
